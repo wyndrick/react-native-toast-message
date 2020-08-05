@@ -162,6 +162,7 @@ class Toast extends Component {
     await this._setState((prevState) => ({
       ...prevState,
       ...getInitialState(this.props), // Reset layout
+      height:this.state.height,
       inProgress: true,
       ...options
     }));
